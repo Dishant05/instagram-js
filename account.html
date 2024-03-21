@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram SignUp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/src/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/src/css/account.css" />
+  </head>
+  <body>
+    <script src="/src/js/accountView.js" type="module" async></script>
+    <nav class="navbar">
+      <div class="nav-wrapper">
+        <img src="./src/img/logo.PNG" class="brand-img" alt="" />
+
+        <div class="account-search-box">
+          <input type="text" class="search-box" placeholder="search" />
+        </div>
+        <div class="nav-items">
+          <img src="./src/img/home.PNG" class="icon home-btn" alt="" />
+          <img src="./src/img/messenger.PNG" class="icon" alt="" />
+          <img src="./src/img/add.PNG" class="icon" alt="" />
+          <img src="./src/img/explore.PNG" class="icon" alt="" />
+          <img src="./src/img/like.PNG" class="icon" alt="" />
+          <a class="signout_btn" href="login.html"
+            ><div class="icon user-profile"><span>Logout</span></div></a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="container">
+        <div class="profile">
+          <div class="profile-image">
+            <img
+              src="https://as1.ftcdn.net/v2/jpg/03/39/45/96/1000_F_339459697_XAFacNQmwnvJRqe1Fe9VOptPWMUxlZP8.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="profile-user-settings">
+            <h1 class="profile-user-name">janedoe_</h1>
+
+            <button class="btn add-post-btn">Add Post</button>
+          </div>
+
+          <div class="profile-stats">
+            <ul>
+              <li>
+                <span class="profile-stat-count profile-posts">0</span> posts
+              </li>
+              <li><span class="profile-stat-count">0</span> followers</li>
+              <li><span class="profile-stat-count">0</span> following</li>
+            </ul>
+          </div>
+
+          <div class="profile-bio">
+            <p>
+              <span class="profile-real-name">Jane Doe</span> Some Description
+              📷✈️🏕️
+            </p>
+          </div>
+          <div class="post-type-filter">
+            <button class="dropdown-btn">
+              <i class="fa fa-filter"></i>
+            </button>
+            <div class="post-image-type-filter">
+              <option value="">No Filter</option>
+              <option value="city">City</option>
+              <option value="nature">Nature</option>
+            </div>
+          </div>
+        </div>
+        <!-- End of profile section -->
+      </div>
+      <!-- End of container -->
+    </header>
+
+    <div class="results-box hidden">
+      <!-- here list are inserted from javascript -->
+      <div class="profile-card">
+        <div class="profile-pic">
+          <img src="" width="70px" height="70px" alt="" />
+        </div>
+        <div>
+          <p class="profile-username">modern_web_channel</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post Gallery -->
+    <main>
+      <div class="container">
+        <div class="gallery">
+          <!-- <div class="gallery-item" tabindex="0">
+            <img
+              src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop"
+              class="gallery-image"
+              alt=""
+            />
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="hover-edit-post">
+                  <span class="visually-hidden">Likes:</span
+                  ><i class="fa" aria-hidden="true"></i> Edit
+                </li>
+              </ul>
+            </div>
+          </div> -->
+
+          <!-- <div class="gallery-item" tabindex="0">
+            <img
+              src="https://images.unsplash.com/photo-1497445462247-4330a224fdb1?w=500&h=500&fit=crop"
+              class="gallery-image"
+              alt=""
+            />
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="hover-edit-post">
+                  <span class="visually-hidden">Likes:</span
+                  ><i class="fa fa-heart-o" aria-hidden="true"></i> 89
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Comments:</span
+                  ><i class="fa fa-comment-o" aria-hidden="true"></i> 5
+                </li>
+              </ul>
+            </div>
+          </div> -->
+
+          <!-- <div class="gallery-item" tabindex="0">
+            <img
+              src="https://images.unsplash.com/photo-1423012373122-fff0a5d28cc9?w=500&h=500&fit=crop"
+              class="gallery-image"
+              alt=""
+            />
+
+            <div class="gallery-item-type">
+              <span class="visually-hidden">Video</span
+              ><i class="fas fa-video" aria-hidden="true"></i>
+            </div>
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="hover-edit-post">
+                  <span class="visually-hidden">Likes:</span
+                  ><i class="fa fa-heart-o" aria-hidden="true"></i> 30
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Comments:</span
+                  ><i class="fa fa-comment-o" aria-hidden="true"></i> 2
+                </li>
+              </ul>
+            </div>
+          </div> -->
+
+          <!-- <div class="gallery-item" tabindex="0">
+            <img
+              src="https://images.unsplash.com/photo-1423012373122-fff0a5d28cc9?w=500&h=500&fit=crop"
+              class="gallery-image"
+              alt=""
+            />
+
+            <div class="gallery-item-type">
+              <span class="visually-hidden">Video</span
+              ><i class="fas fa-video" aria-hidden="true"></i>
+            </div>
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="hover-edit-post">
+                  <span class="visually-hidden">Likes:</span
+                  ><i class="fa fa-heart-o" aria-hidden="true"></i> 30
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Comments:</span
+                  ><i class="fa fa-comment-o" aria-hidden="true"></i> 2
+                </li>
+              </ul>
+            </div>
+          </div> -->
+
+          <!-- <div class="gallery-item" tabindex="0">
+            <img
+              src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop"
+              class="gallery-image"
+              alt=""
+            />
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="hover-edit-post">
+                  <span class="visually-hidden">Likes:</span
+                  ><i class="fa fa-heart-o" aria-hidden="true"></i> 56
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Comments:</span
+                  ><i class="fa fa-comment-o" aria-hidden="true"></i> 2
+                </li>
+              </ul>
+            </div>
+          </div> -->
+
+          <!-- <div class="gallery-item" tabindex="0">
+            <img
+              src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop"
+              class="gallery-image"
+              alt=""
+            />
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="hover-edit-post">
+                  <span class="visually-hidden">Likes:</span
+                  ><i class="fa fa-heart-o" aria-hidden="true"></i> 56
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Comments:</span
+                  ><i class="fa fa-comment-o" aria-hidden="true"></i> 2
+                </li>
+              </ul>
+            </div>
+          </div> -->
+
+          <!-- <div class="gallery-item" tabindex="0">
+            <img
+              src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop"
+              class="gallery-image"
+              alt=""
+            />
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="hover-edit-post">
+                  <span class="visually-hidden">Likes:</span
+                  ><i class="fa fa-heart-o" aria-hidden="true"></i> 56
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Comments:</span
+                  ><i class="fa fa-comment-o" aria-hidden="true"></i> 2
+                </li>
+              </ul>
+            </div>
+          </div> -->
+        </div>
+
+        <!-- <div class="loader"></div> -->
+      </div>
+      <!-- End of gallery -->
+
+      <!-- For new post -->
+      <div class="modal-windows">
+        <div class="modal add-new-post hidden">
+          <div class="info">
+            <div class="user">
+              <div class="profile-pic">
+                <div class="icon user-profile extra"></div>
+              </div>
+              <p class="username">janedoe_</p>
+            </div>
+            <a
+              ><img
+                src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-512.png"
+                class="options close-post"
+                alt=""
+            /></a>
+          </div>
+          <div class="post-specific-image">
+            <img src="" class="post-image new-post-image" alt="" />
+          </div>
+          <form>
+            <div class="image-replace">
+              <label for="new-image">Upload Image</label>
+              <input
+                type="file"
+                class="new-post-image-url"
+                placeholder="Enter URL"
+              />
+            </div>
+            <div class="image-filter">
+              <label for="post-image-type">Type: </label>
+              <select name="post-image-type" class="post-image-type">
+                <option value="city">City</option>
+                <option value="nature">Nature</option>
+              </select>
+            </div>
+            <div class="post-content">
+              <p class="description new-description">
+                <label for="new-description">Description: </label>
+                <input
+                  class="new-post-description-text"
+                  placeholder="Description"
+                />
+              </p>
+            </div>
+            <div class="new-post-submit">
+              <input
+                class="new-post-submission-btn"
+                type="submit"
+                value="Submit"
+              />
+            </div>
+          </form>
+        </div>
+
+        <!-- For opening Individual Post -->
+
+        <!-- <div class="modal post-info hidden">
+          <div class="info">
+            <div class="user">
+              <div class="profile-pic">
+                <div class="icon user-profile extra"></div>
+              </div>
+              <p class="username">janedoe_</p>
+            </div>
+            <a
+              ><img src="src/img/option.PNG" class="options edit-post" alt=""
+            /></a>
+          </div>
+          <img src="src/img/cover 1.png" class="post-image" alt="" />
+          <div class="post-content">
+            <div class="reaction-wrapper">
+              <img src="src/img/like.PNG" class="icon" alt="" />
+              <img src="src/img/comment.PNG" class="icon" alt="" />
+              <img src="src/img/send.PNG" class="icon" alt="" />
+              <img src="src/img/save.PNG" class="save icon" alt="" />
+            </div>
+            <p class="likes">1,012 likes</p>
+            <p class="description"><span>janedoe_</span> Lorem ipsum</p>
+          </div>
+        </div> -->
+
+        <!-- For Editing Post -->
+
+        <!-- <div class="modal post-info-edit hidden">
+          <div class="info">
+            <div class="user">
+              <div class="profile-pic">
+                <div class="icon user-profile extra"></div>
+              </div>
+              <p class="username">janedoe_</p>
+            </div>
+            <a
+              ><img
+                src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-512.png"
+                class="options close-post"
+                alt=""
+            /></a>
+          </div>
+          <div class="post-specific-image">
+            <img src="" class="post-image" alt="" />
+          </div>
+          <form>
+            <div class="image-replace">
+              <label for="new-image">New Image URL</label>
+              <input
+                type="text"
+                class="new-image-url"
+                placeholder="Enter URL"
+              />
+            </div>
+            <div class="image-filter">
+              <label for="post-image-type">Type: </label>
+              <select name="post-image-type" class="post-image-type">
+                <option value="city">City</option>
+                <option value="nature">Nature</option>
+              </select>
+            </div>
+            <div class="post-content">
+              <p class="description new-description">
+                <label for="new-description">New description: </label>
+                <input
+                  class="new-description-text"
+                  placeholder="New Description"
+                />
+              </p>
+            </div>
+            <div class="edited-post-submit-delete">
+              <input
+                class="edited-post-submission-btn"
+                type="submit"
+                value="Submit"
+              />
+              <input
+                class="edited-post-delete-btn"
+                type="button"
+                value="Delete Post"
+              />
+            </div>
+          </form>
+        </div> -->
+      </div>
+      <div class="overlay hidden"></div>
+    </main>
+  </body>
+</html>

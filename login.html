@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/css/style.css" />
+  </head>
+  <body>
+    <!-- <script src="/src/js/signUpView.js" type="module" async></script> -->
+    <script src="/src/js/logInView.js" type="module" async></script>
+
+    <div class="wrapper">
+      <div class="main-content">
+        <div class="header">
+          <img src="/src/img/Insta Logo.png" class="insta-front-logo" />
+        </div>
+
+        <form class="l-part">
+          <div class="email-entry valid-container">
+            <input type="text" placeholder="Email" class="login-email" />
+            <p class="overall-validation"></p>
+          </div>
+          <div class="overlap-text valid-container">
+            <input
+              type="password"
+              placeholder="Password"
+              class="login-password"
+            />
+            <a href="#">Forgot?</a>
+            <p class="overall-validation"></p>
+          </div>
+          <button type="submit" value="Log in" class="login-btn" />
+        </form>
+      </div>
+
+      <div class="sub-content">
+        <div class="s-part">
+          Don't have an account?<a class="sign-up" href="/signup.html">
+            Sign up</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- <main>
+      <div class="page sign-up-box">
+        <div class="header">
+          <img src="/src/img/Insta Logo.png" class="insta-logo" />
+          <p>Sign up to see photos and videos from your friends.</p>
+          <button>
+            <i class="fab fa-facebook-square"></i> Log in with Facebook
+          </button>
+          <div>
+            <hr />
+            <p>OR</p>
+            <hr />
+          </div>
+        </div>
+        <div class="container">
+          <form action="">
+            <input class="sign-up-email" type="text" placeholder="Email" />
+            <p class="sign-up-email-validation"></p>
+            <input
+              class="sign-up-fullname"
+              type="text"
+              placeholder="Full Name"
+            />
+            <input
+              class="sign-up-username"
+              type="text"
+              placeholder="Username"
+            />
+            <p class="sign-up-username-validation"></p>
+            <input
+              class="sign-up-password"
+              type="password"
+              placeholder="Password"
+            />
+            <p class="sign-up-password-validation"></p>
+            <button type="submit" class="sign-up-btn">Sign up</button>
+          </form>
+
+          <ul>
+            <li>By signing up, you agree to our</li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Data Policy</a></li>
+            <li>and</li>
+            <li><a href="">Cookies Policy</a> .</li>
+          </ul>
+        </div>
+      </div>
+      <div class="option">
+        <p>Have an account? <a href="#">Log in</a></p>
+      </div>
+      <div class="otherapps">
+        <p>Get the app.</p>
+        <button type="button"><i class="fab fa-apple"></i> App Store</button>
+        <button type="button">
+          <i class="fab fa-google-play"></i> Google Play
+        </button>
+      </div>
+    </main> -->
+  </body>
+</html>
