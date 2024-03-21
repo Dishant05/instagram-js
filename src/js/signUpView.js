@@ -174,7 +174,7 @@ signUpBox.addEventListener("submit", function (e) {
   console.log(userLogins);
   localStorage.setItem("currentUser", JSON.stringify(currentUser));
 
-  window.location.assign("account.html");
+  window.location.assign("/src/account.html");
 });
 
 localStorage.removeItem("currentUser");

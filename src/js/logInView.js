@@ -63,7 +63,7 @@ if (frontPageLoginBox) {
       console.log(currentUser);
       localStorage.setItem("currentUser", JSON.stringify(currentUser));
 
-      window.location.assign("account.html");
+      window.location.assign("/src/account.html");
     } catch (err) {
       if (document.querySelector(".final-validation")) {
         document.querySelector(".final-validation").remove();
