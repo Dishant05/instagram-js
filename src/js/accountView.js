@@ -216,7 +216,7 @@ const viewPostMarkup = (postObj) => {
         </div>
         <div class="post-btns">
         <a
-          ><img src="src/img/option.PNG" class="options edit-post" alt=""
+          ><img src="./img/option.PNG" height="20px" class="options edit-post" alt=""
         /></a>
         <a
         ><img
